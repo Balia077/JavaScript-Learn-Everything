@@ -22,3 +22,28 @@ const a = 12;
 // const cannot be updated or re-declared
 // const must be initialized during declaration
 
+// Global Scope
+// Can be accessed from anywhere in the code
+
+// Function Scoped
+// Can be accessed only within the function
+
+// Block Scoped
+// Can be accessed only within the block { ... }
+
+// Temporal Dead Zone
+// Compiler Knows about the variable but it is not yet declared
+// The time between entering scope and variable declaration
+
+// Example of TDZ with let and const
+
+//console.log(a); // ReferenceError: Cannot access 'a' before initialization
+
+let a = 12;
+
+// Example of TDZ with var - it is called hoisting
+
+console.log(b); // undefined
+
+var b = 12;
+
