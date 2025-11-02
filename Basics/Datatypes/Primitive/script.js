@@ -5,7 +5,30 @@
 
 // String, number, bolean, null, undefined, symbol, bigInt
 
-let a = 12;
+// String
 
-let b = a;
-a = a + 2;
+// '' - Single quotes
+// "" - Double quotes
+// `` - Backticks (Template literals)
+
+// number
+
+// 12 - number(integer)
+// 12.3 - number(float)
+
+// boolean
+
+// true
+// false
+
+// null
+// null - jab koi value intentionally khali chhodni ho
+
+// undefined
+// undefined - jab koi value assign na ki ho
+
+// symbol
+// symbol - unique identifier ke liye use hota hai
+
+// bigInt
+// bigInt - bahut bade numbers ko represent karne ke liye use hota hai
