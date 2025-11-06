@@ -16,3 +16,9 @@ console.log(typeof NaN); // ye NaN ko number batata hai jo ki sahi hai kyuki NaN
 
 console.log('5' + 10); // yaha par string aur number ko add karne par ye number ko string me convert kar deta hai aur output hota hai '510'
 console.log('5' - 2); // yaha par string aur number ko subtract karne par ye string ko number me convert kar deta hai aur output hota hai 3
+
+// Truthy and Falsy values
+// Js me kuch values ko truthy aur falsy mana jata hai jiska matlab hai ki ye values true ya false ke roop me evaluate hoti hai
+
+// Falsy Values: false, 0, "", null, undefined, NaN, document.all, BigInt(0)
+// Truthy Values: Rest of the values
