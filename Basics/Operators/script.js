@@ -59,3 +59,29 @@ console.log(true || false); // Logical OR --> true
 
 console.log(!true); // Logical NOT --> false
 
+// Unary Operators
+// typeof + - ++ --
+
+console.log(typeof 42); // "number"
+
+console.log(typeof "Hello"); // "string"
+
+console.log(+ "5"); // Converts string to number --> 5
+
+console.log(- "5"); // Converts string to number and negates --> -5
+
+let count = 0;
+console.log(++count); // Pre-increment --> 1
+console.log(count++); // Post-increment --> 1
+console.log(count);   // 2
+
+console.log(--count); // Pre-decrement --> 1
+console.log(count--); // Post-decrement --> 1
+console.log(count);   // 0
+
+// Ternary Operator
+// condition ? expr1 : expr2
+
+let age = 18;
+let canVote = age >= 18 ? "Yes" : "No";
+console.log(canVote); // "Yes"
