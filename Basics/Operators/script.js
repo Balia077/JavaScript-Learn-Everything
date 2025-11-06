@@ -35,3 +35,18 @@ console.log(5 >= 5); // Greater than or equal to --> true
 
 console.log(3 <= 5); // Less than or equal to --> true
 
+// Assignment Operators
+// = += -= *= /= %=
+
+let a = 10; // Assignment
+a += 5;
+console.log(a); // 15
+a -= 3;
+console.log(a); // 12   
+a *= 2;
+console.log(a); // 24
+a /= 4;
+console.log(a); // 6
+a %= 5;
+console.log(a); // 1
+
