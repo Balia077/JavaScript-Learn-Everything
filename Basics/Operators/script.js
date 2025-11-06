@@ -50,3 +50,12 @@ console.log(a); // 6
 a %= 5;
 console.log(a); // 1
 
+// Logical Operators
+// && || !
+
+console.log(true && false); // Logical AND --> false
+
+console.log(true || false); // Logical OR --> true
+
+console.log(!true); // Logical NOT --> false
+
