@@ -52,3 +52,16 @@ function yoo(){
 
 let val = yoo();
 console.log(val);
+
+// First Class Functions
+
+// Functions ko values ki tarah treat kar sakte hai
+
+// ex:-
+
+function suii(val){
+    val();
+}
+suii(function(){
+    console.log("suiiiiiiiiiii");
+});
