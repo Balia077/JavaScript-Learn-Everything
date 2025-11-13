@@ -52,3 +52,13 @@ console.log(abcd(1,2,3,4,5));
     }
 
     /* console.log(checkAge(19)); */
+
+
+// Q6: Pass a function into another function and execute it inside.
+
+function suiii(val){
+    val();
+}
+suiii(function(){
+    console.log("suiii");
+});
