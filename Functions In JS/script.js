@@ -43,3 +43,12 @@ function abcd(...val){
     console.log(val);
 }
 abcd(1,2,3,4,5,6);
+
+// return
+
+function yoo(){
+    return 7;
+}
+
+let val = yoo();
+console.log(val);
