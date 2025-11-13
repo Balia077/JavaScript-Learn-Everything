@@ -125,3 +125,8 @@ function grandFather(){
 
 // -> means we can only access the variables within their lexical socpe.
 
+// IIFE -> Immediatly Invoke Function Expression
+
+(function(){
+    console.log("IIFE")
+})();
