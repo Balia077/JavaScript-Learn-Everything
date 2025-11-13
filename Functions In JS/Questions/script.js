@@ -51,4 +51,4 @@ console.log(abcd(1,2,3,4,5));
         return "Allowed";
     }
 
-    console.log(checkAge(19));
+    /* console.log(checkAge(19)); */
