@@ -105,3 +105,23 @@ function parent(){
     }
 }
 
+// Lexical Scoping
+
+function grandFather(){
+    let g = 70;
+
+    function dad(){
+        let d = 40;
+
+        function son(){
+            let s = 15;
+        }
+    }
+}
+
+// Here g's scope is from 111 to 120
+// d's scope is from 114 to 119
+// s's scope is from 117 to 118
+
+// -> means we can only access the variables within their lexical socpe.
+
