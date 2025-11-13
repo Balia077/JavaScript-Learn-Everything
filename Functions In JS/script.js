@@ -130,3 +130,26 @@ function grandFather(){
 (function(){
     console.log("IIFE")
 })();
+
+// Hoisting
+
+// We can call the function before making, but it can only works on function statement/declaration not on fnc exxpression or arrow functions. 
+
+hoist();
+
+function hoist(){
+    console.log("Hoisting");
+}
+
+// hoi();   // Uncaught ReferenceError: Cannot access 'ho' before initialization
+
+let hoi = function(){
+    console.log("yii");
+}
+
+// ho();   //Uncaught ReferenceError: Cannot access 'ho' before initialization
+
+let ho = ()=>{
+    console.log("hiii");
+}
+
