@@ -106,6 +106,7 @@ function addToTotal(num){
 
 // Ans =>
 
-(function(){
+(function init(){
     console.log("Initialized");
 })();
+
