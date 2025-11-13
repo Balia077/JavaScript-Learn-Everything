@@ -62,3 +62,38 @@ function suiii(val){
 suiii(function(){
     console.log("suiii");
 });
+
+// Q7: Identify which is the higher order fnc.
+
+[1,2,3].map(function(x){
+    return x * 2;
+});
+
+// Ans => map is the high order function, because it accepts another function.
+
+// Q8: It is pure function or Impure function? and why?
+
+let a = 0;
+
+function addTotal(num){
+    a += num;
+}
+
+// Ans => It is an Impure function, because it changes the value of the external variable inside it.
+
+// Q9: convert this function into a pure function.
+
+/* let Total = 0;
+
+function addToTotal(num){
+    Total += num;
+} */
+
+//Ans =>
+
+let Total = 0;
+
+function addToTotal(num){
+    let newTotal = Total;
+    newTotal += num;
+}
