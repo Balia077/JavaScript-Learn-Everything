@@ -76,3 +76,23 @@ function high(){
     }
 }
 high()();
+
+// Pure vs Impure functions
+
+// aisa fnc jo ki bahar ki value ko na badle wo hai pure fnc
+
+// ex:-
+
+
+let a = 7;
+
+function pure(){
+    console.log("huihui");
+}
+
+// aisa fnc jo bahar ki value ko badal de wo hai impure fnc
+
+function imPure(){
+    a++;
+}
+
