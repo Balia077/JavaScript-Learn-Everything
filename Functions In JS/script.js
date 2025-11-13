@@ -96,3 +96,12 @@ function imPure(){
     a++;
 }
 
+// Closures -> ek fnc jo return kare ek aur fnc aur return hone wala fnc hamesha use karega parent fnc ka koi variable.
+
+function parent(){
+    let b = 12;
+    return function(){
+        console.log(b);
+    }
+}
+
