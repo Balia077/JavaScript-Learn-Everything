@@ -65,3 +65,14 @@ function suii(val){
 suii(function(){
     console.log("suiiiiiiiiiii");
 });
+
+// Higher Order Function
+
+// HOF wo function hota hai jo ki return kare ek function ya fir accept ek function apne parameter me
+
+function high(){
+    return function(){
+        console.log("Sherrrr");
+    }
+}
+high()();
