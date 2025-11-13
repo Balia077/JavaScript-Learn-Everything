@@ -33,3 +33,24 @@ function abcd(...score){
    return total;
 }
 console.log(abcd(1,2,3,4,5));
+
+// Q5: fix this fnc using early return.
+
+/* function checkAge(age){
+    if(age < 18){
+        console.log("Too young");
+    }else{
+        console.log("Allowed");
+    }
+} */
+
+// Ans =>
+
+    function checkAge(age){
+        if(age < 18) return "Too young";
+        return "Allowed";
+    }
+
+    console.log(checkAge(19));
+
+    
