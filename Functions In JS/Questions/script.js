@@ -13,3 +13,23 @@
 let multiply = (a, b)=>{
     return a * b;
 };
+
+// Q3: Guess the output.
+
+function sayHi(name = "Guest"){ // Default Parameter
+    console.log("Hi", name);
+}
+sayHi();
+
+// Ans => Hi Guest
+
+// Q4: use rest parameter to accept any number of scores and return the total.
+
+function abcd(...score){
+    let total = 0;
+   score.forEach(function(val){
+    total += val;
+   })
+   return total;
+}
+console.log(abcd(1,2,3,4,5));
