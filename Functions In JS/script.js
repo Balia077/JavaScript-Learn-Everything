@@ -29,3 +29,17 @@ function dance(value){
 dance("Ghoda"); //Argument
 dance("Balia"); //Argument
 
+// Default Parameters
+
+function add(a, b = 5){ // b = 5 is default parameter
+    console.log(a + b);
+}
+add(3); // 8
+add(3,7); // 10
+
+// Rest Operator
+
+function abcd(...val){
+    console.log(val);
+}
+abcd(1,2,3,4,5,6);
