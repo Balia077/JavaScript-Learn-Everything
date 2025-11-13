@@ -97,3 +97,15 @@ function addToTotal(num){
     let newTotal = Total;
     newTotal += num;
 }
+
+// Q10: Convert this normal function into an IIFE.
+
+/* function init(){
+    console.log("Initialized");
+} */
+
+// Ans =>
+
+(function(){
+    console.log("Initialized");
+})();
