@@ -61,3 +61,37 @@ let Arr = arr2.map(function(){
     //return 7;   //creates a blank array and returns 7 => [7,7,7,7,7]
 });
 
+// filter()
+
+let fil = [1,2,3,4,5];
+
+let os = fil.filter(function(val){
+    if(val > 2) return true;    //[3,4,5]
+});
+
+// reduce()
+
+let red = [1,2,3,4,5];
+
+let ans = red.reduce(function(accumulator, val){
+    return accumulator + val;   //15
+},0);
+
+// find()
+
+let va = red.find(function(val){
+    return val === 1;   //1
+});
+
+// some()
+
+let any = red.some(function(val){
+    return val > 4; //true
+});
+
+// every()
+
+let eve = red.every(function(val){
+    return val > 1; //false
+});
+
