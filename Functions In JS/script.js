@@ -152,4 +152,3 @@ let hoi = function(){
 let ho = ()=>{
     console.log("hiii");
 }
-
