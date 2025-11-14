@@ -95,3 +95,17 @@ let eve = red.every(function(val){
     return val > 1; //false
 });
 
+// Destructuring
+
+let [a, b, c] = red;
+console.log(a, b, c);   //1 2 3
+
+// spread operator
+
+let sp = [1,2,3,4,5,6,7,8,9];
+let sp1 = [...sp];
+
+sp1.pop();  //removed 9 from sp1
+console.log(sp);    //[1,2,3,4,5,6,7,8,9]
+console.log(sp1);   //[1,2,3,4,5,6,7,8]
+
