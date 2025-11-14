@@ -41,3 +41,16 @@ arr.splice(1,2);   //[0, 4, 5] -> 2 & 3 removed
 let newarr = arr.slice(1,2);
 console.log(newarr);    //[0, 4] -> it make a copy of the sellected array elements of the main array and make a new array, it does not make any changes in the main array.
 
+// reverse()
+
+let arr2 = [1,2,3,4,5];
+
+arr2.reverse(); //[5,4,3,2,1] -> reverse the array
+
+// sort()
+
+let sr = arr2.sort(function(a,b){
+    //return a - b; //sort in ascending order
+    return b - a;   //sort in descending order
+});
+
