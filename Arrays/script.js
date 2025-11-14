@@ -51,6 +51,13 @@ arr2.reverse(); //[5,4,3,2,1] -> reverse the array
 
 let sr = arr2.sort(function(a,b){
     //return a - b; //sort in ascending order
-    return b - a;   //sort in descending order
+    //return b - a;   //sort in descending order
+});
+
+// map()
+// map sirf tab use karna hai jab aapko ek naya array banana hai pichle array ke data ke basis par.
+
+let Arr = arr2.map(function(){
+    //return 7;   //creates a blank array and returns 7 => [7,7,7,7,7]
 });
 
