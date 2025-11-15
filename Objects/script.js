@@ -56,3 +56,16 @@ for(let key in ob){
 let obj2 = {...ob};
 console.log(obj2);      //{name: 'Balaram', age: 19, email: 'test@test.com'}
 
+// Deep clone
+
+let Obj = {
+    name: "balia",
+    age: 19,
+    email: "test@test.com",
+    address: {
+        city: "Jajpur",
+    },
+};
+
+let Obj2 = JSON.parse(JSON.stringify(Obj));
+
