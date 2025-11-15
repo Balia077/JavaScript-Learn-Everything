@@ -51,6 +51,8 @@ for(let key in ob){
 
 // Object Copying
 
+//Spread Operator
+
 let obj2 = {...ob};
 console.log(obj2);      //{name: 'Balaram', age: 19, email: 'test@test.com'}
 
