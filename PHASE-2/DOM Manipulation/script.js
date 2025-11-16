@@ -41,3 +41,7 @@ let h4 = document.createElement("h4");
 h4.textContent = "Hello jii";
 document.body.append(h4);       //Hello jii
 
+// CSS Manipulation
+
+h4.style.color = "red";
+h4.style.fontFamily = "sans-serif";
