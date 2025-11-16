@@ -28,4 +28,7 @@ a.setAttribute("href", "https://google.com");
 
 console.log(a.getAttribute("href"));
 
-//3. 
+//3. removeAttribute()
+
+a.removeAttribute("href");
+
