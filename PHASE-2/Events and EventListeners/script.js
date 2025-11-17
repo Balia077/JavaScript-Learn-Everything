@@ -30,3 +30,12 @@ p.addEventListener("dblclick", dblclick);       //added
 
 p.removeEventListener("dblclick", dblclick);    //removed
 
+//common events
+
+//1. click
+//2. input
+//3. change
+//4. submit
+//5. mouseover
+//6. keyup
+
