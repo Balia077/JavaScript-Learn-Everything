@@ -20,7 +20,13 @@ p.addEventListener("click", function(){
     p.style.color = "green";
 });
 
-p.addEventListener("dblclick", function(){
+// remove event listener
+
+function dblclick(){
     p.style.color = "red";
-});
+}
+
+p.addEventListener("dblclick", dblclick);       //added
+
+p.removeEventListener("dblclick", dblclick);    //removed
 
