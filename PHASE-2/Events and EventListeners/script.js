@@ -43,6 +43,8 @@ p.removeEventListener("dblclick", dblclick);    //removed
 
 let inp = document.querySelector("input");
 inp.addEventListener("input", function(val){
-    console.log(val.data);
+    if(val.data !== null){
+        console.log(val.data);
+    }
 });
 
