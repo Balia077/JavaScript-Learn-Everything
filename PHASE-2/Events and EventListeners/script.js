@@ -39,3 +39,10 @@ p.removeEventListener("dblclick", dblclick);    //removed
 //5. mouseover
 //6. keyup
 
+//input
+
+let inp = document.querySelector("input");
+inp.addEventListener("input", function(val){
+    console.log(val.data);
+});
+
