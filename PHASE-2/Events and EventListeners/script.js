@@ -57,3 +57,14 @@ sel.addEventListener("change", function(dets){
     device.textContent = `${dets.target.value} Device Selected`;
 });
 
+//mouseover & mouseout
+
+let box = document.querySelector("#box");
+
+box.addEventListener("mouseover", ()=> {
+    box.style.backgroundColor = "yellow";
+});
+
+box.addEventListener("mouseout", ()=> {
+    box.style.backgroundColor = "red";
+});
