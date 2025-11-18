@@ -32,11 +32,11 @@ p.removeEventListener("dblclick", dblclick);    //removed
 
 //common events
 
-//1. click
-//2. input
-//3. change
-//4. submit
-//5. mouseover
+//1. click✅
+//2. input✅
+//3. change✅
+//4. submit✅
+//5. mouseover✅
 //6. keyup
 
 //input
@@ -68,3 +68,14 @@ box.addEventListener("mouseover", ()=> {
 box.addEventListener("mouseout", ()=> {
     box.style.backgroundColor = "red";
 });
+
+//Event bubling and capturing
+
+//jispe event ayega agar uspar listener nhi hua to hamara event uske parent par listener dhundega aur aisa karte karte upar ki taraf move karega.
+
+let ul = document.querySelector("ul");
+
+ul.addEventListener("click", (dets)=>{
+   dets.target.classList.toggle("lt");
+});
+
