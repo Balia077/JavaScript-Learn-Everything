@@ -73,9 +73,20 @@ box.addEventListener("mouseout", ()=> {
 
 //jispe event ayega agar uspar listener nhi hua to hamara event uske parent par listener dhundega aur aisa karte karte upar ki taraf move karega.
 
+//Event Bubling
+
 let ul = document.querySelector("ul");
 
 ul.addEventListener("click", (dets)=>{
    dets.target.classList.toggle("lt");
 });
+
+//Event Capturing
+
+// jab bhi aap click karte ho ya koi bhi event raise karte ho to aapka jo event flow hai do phases mein chalta hai:
+
+// phase 1: event top level element se neeche ki taraf ayega
+// phase 2: event raised element se parent ki taraf jaayega
+
+// pahle capture phase chalta hai fir bubling phase chalta hai
 
