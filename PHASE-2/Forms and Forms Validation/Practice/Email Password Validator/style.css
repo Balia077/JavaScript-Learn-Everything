@@ -67,8 +67,16 @@ button:hover {
 }
 
 .error {
+    display: none;
     color: red;
     font-size: 13px;
     margin-top: 5px;
     height: 14px;
+}
+
+#resultMessage{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
 }
