@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Download Progress</title>
+    <style>
+        :root {
+            --bg: #0f1724;
+            --glass: #ffffff;
+            --accent: #6ee7b7;
+            --muted: rgba(255, 255, 255, 0.65);
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Inter, sans-serif;
+            background: var(--bg);
+            padding: 20px;
+        }
+
+        .card {
+            width: 350px;
+            padding: 22px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            color: #e6eef6;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin: 0 0 6px 0;
+            color: var(--glass);
+        }
+
+        .sub {
+            display: none;
+            font-size: 13px;
+            margin-bottom: 16px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .file-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .file-thumb {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .meta .name {
+            font-size: 14px;
+            color: var(--glass);
+        }
+
+        .meta .small {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 3px;
+        }
+
+        .progress-track {
+            display: none;
+            width: 100%;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            margin: 12px 0 10px 0;
+            padding: 2px;
+        }
+
+        .progress-bar {
+            width: 0%;
+            /* static, you can edit with JS */
+            height: 100%;
+            border-radius: 999px;
+            background: var(--accent);
+        }
+
+        .stats {
+            font-size: 12px;
+            display: none;
+            justify-content: space-between;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .controls {
+            display: none;
+            gap: 8px;
+            margin-top: 16px;
+            user-select: none;
+        }
+
+        .btn {
+            cursor: pointer;
+            flex: 1;
+            padding: 10px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(27, 19, 19, 0.12);
+            text-align: center;
+            font-size: 14px;
+            color: var(--glass);
+        }
+        .h3{
+            display: none;
+            justify-content: center;
+        }
+        #download{
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Theme-pack-v3.zip</h1>
+        <div class="sub">Download in Progress</div>
+
+        <div class="file-row">
+            <div class="file-thumb">ZIP</div>
+            <div class="meta">
+                <div class="name">theme-pack-v3.zip</div>
+                <div class="small">100 GB file</div>
+            </div>
+        </div>
+
+        <div class="progress-track">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="stats">
+            <span class="dgb">Downloaded: 0 GB</span>
+            <span class="perc">0%</span>
+        </div>
+
+        <div class="controls">
+            <div class="btn pau" >Pause</div>
+            <div class="btn can">Cancel</div>
+        </div>
+        <h3 class="h3">Downloaded...</h3>
+        <div id="download" class="btn">Download</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
