@@ -13,7 +13,7 @@ let h3 = document.querySelector(".h3");
 let intvervalId;
 let count = 0;
 let flag = true;
-let seconds = 10;
+let seconds = 2;
 
 download.addEventListener("click", function () {
     download.style.display = "none";
@@ -45,8 +45,10 @@ pau.addEventListener("click", function () {
     if (flag === true) {
         clearInterval(intvervalId);
         flag = false;
+        pau.textContent = "Resume";
     }
     else {
+        pau.textContent = "Pause";
         startInt();
         flag = true;
     }
