@@ -41,6 +41,19 @@ function startInt() {
     }, (seconds * 1000) / 100);
 }
 
+pau.addEventListener("click", function () {
+    if (flag === true) {
+        clearInterval(intervalId);
+        flag = false;
+        pau.textContent = "Resume";
+    }
+    else {
+        startInt();
+        flag = true;
+        pau.textContent = "Pause";
+    }
+});
+
 can.addEventListener("click", function () {
     download.style.display = "flex";
     controls.style.display = "none";
@@ -48,4 +61,13 @@ can.addEventListener("click", function () {
     stats.style.display = "none";
     sub.style.display = "none";
     count = 0;
+    clearInterval(intervalId);
+    if(flag === true){
+        pau.textContent = "Resume";
+        flag = false;
+    }
+    else{
+        pau.textContent = "Pause";
+        flag = true;
+    }
 });
