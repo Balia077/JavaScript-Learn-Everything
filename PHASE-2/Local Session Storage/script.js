@@ -1,4 +1,4 @@
-// Local Storage, Session Storage and Cookies
+// Local Storage, Session Storage & Cookies
 
 // localStorage => aapke browser ke andar data store karta hai browser band hone ke baad bhi data wahi rehta hai.
 
