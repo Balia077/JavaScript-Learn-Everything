@@ -10,10 +10,10 @@ let pBar = document.querySelector(".progress-bar");
 let sub = document.querySelector(".sub");
 let h3 = document.querySelector(".h3");
 
-let intvervalId;
+let intervalId;
 let count = 0;
 let flag = true;
-let seconds = 2;
+let seconds = 10;
 
 download.addEventListener("click", function () {
     download.style.display = "none";
@@ -25,7 +25,7 @@ download.addEventListener("click", function () {
 });
 
 function startInt() {
-    intvervalId = setInterval(function () {
+    intervalId = setInterval(function () {
         if (count <= 99) {
             count++;
             pBar.style.width = `${count}%`;
@@ -41,25 +41,11 @@ function startInt() {
     }, (seconds * 1000) / 100);
 }
 
-pau.addEventListener("click", function () {
-    if (flag === true) {
-        clearInterval(intvervalId);
-        flag = false;
-        pau.textContent = "Resume";
-    }
-    else {
-        pau.textContent = "Pause";
-        startInt();
-        flag = true;
-    }
-});
-
 can.addEventListener("click", function () {
     download.style.display = "flex";
     controls.style.display = "none";
     pTrack.style.display = "none";
     stats.style.display = "none";
     sub.style.display = "none";
-    flag = true;
     count = 0;
 });
