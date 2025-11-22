@@ -26,6 +26,20 @@ const closeBtn = formBox.querySelector(".close-btn");
 
 //CODE STARTS HERE
 
+function saveToLocalStorage(obj){
+    if(localStorage.getItem("tasks") === null){
+        let oldTasks = [];
+        oldTasks.push(obj);
+        localStorage.setItem("tasks", JSON.stringify(oldTasks));
+    }
+    else{
+        let oldTasks = localStorage.getItem("tasks");
+        oldTasks = JSON.parse(oldTasks);
+        oldTasks.push(obj);
+        localStorage.setItem("tasks", JSON.stringify(oldTasks));
+    }
+}
+
 addBtn.addEventListener("click",function(){
     formBox.style.display = "initial";
 });
@@ -46,7 +60,7 @@ form.addEventListener("submit", function(evt){
         if(cat.checked){
             selected = cat.value;
         }
-    })
+    });
 
     if(imageUrl === ""){
         alert("Please enter an image URL.");
@@ -69,4 +83,12 @@ form.addEventListener("submit", function(evt){
         alert("Please select a category.");
         return;
     }
+
+    saveToLocalStorage({
+        imageUrl,
+        fullName,
+        homeTown,
+        purpose,
+        selected,
+    });
 });
