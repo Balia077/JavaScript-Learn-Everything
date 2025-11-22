@@ -91,4 +91,7 @@ form.addEventListener("submit", function(evt){
         purpose,
         selected,
     });
+
+    form.reset();
+    formBox.style.display = "none";
 });
