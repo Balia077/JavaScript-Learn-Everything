@@ -184,7 +184,9 @@ function showCards() {
         card.appendChild(actions);
 
         // Now you can append it anywhere:
-        document.body.appendChild(card);
+        document.querySelector(".stack").appendChild(card);
 
     });
 }
+
+showCards();
