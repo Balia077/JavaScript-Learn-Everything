@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --bg-color: #111;
+    --text-color: #f2f2f2;
+
+    /* Padding Variables */
+
+    --nav-padding: 15px 30px;
+    --section-padding: 15px 30px;
+    --padding-s: 5px;
+    --padding-m: 10px;
+    --padding-l: 15px;
+    --padding-xl: 20px;
+    --padding-xxl: 30px;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
