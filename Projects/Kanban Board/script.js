@@ -35,3 +35,15 @@ function addDragEvents(column){
 addDragEvents(todo);
 addDragEvents(progress);
 addDragEvents(done);
+
+const toggleModalBtn = document.querySelector("#toggle-modal");
+const modal = document.querySelector(".modal");
+const modalBg = document.querySelector(".modal .bg");
+
+toggleModalBtn.addEventListener("click", () => {
+    modal.classList.toggle("active");
+});
+
+modalBg.addEventListener("click", () => {
+    modal.classList.remove("active");
+})
