@@ -64,5 +64,10 @@ addTaskBtn.addEventListener("click", () => {
         <button>Delete</button>
     `
     todo.appendChild(div);
+
+    div.addEventListener("drag", () => {
+        dragTask = div;
+    });
+
     modal.classList.remove("active");
 });
