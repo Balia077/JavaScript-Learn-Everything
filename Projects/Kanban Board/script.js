@@ -1,9 +1,13 @@
+let tasksData = {};
+
 const todo = document.querySelector("#todo");
 const progress = document.querySelector("#progress");
 const done = document.querySelector("#done");
 const tasks = document.querySelectorAll(".task");
 const columns = [todo, progress, done];
 let dragTask = null;
+
+
 
 tasks.forEach(task => {
     task.addEventListener("drag", (e) => {
@@ -71,11 +75,20 @@ addTaskBtn.addEventListener("click", () => {
         <p>${taskDis}</p>
         <button>Delete</button>
     `
-    todo.appendChild(div);
+        todo.appendChild(div);
+
+      
 
         columns.forEach(col => {
             const tasks = col.querySelectorAll(".task");
             const count = col.querySelector(".right");
+            tasksData[col.id] = Array.from(tasks).map(t => {
+              return {
+                title: t.querySelector("h2").innerText,
+                desc: t.querySelector("p").innerText
+              }  
+            })
+            localStorage.setItem("tasks", JSON.stringify(tasksData));
             count.innerText = tasks.length;
         })
 
