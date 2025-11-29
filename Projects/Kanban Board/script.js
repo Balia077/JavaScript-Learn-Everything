@@ -7,7 +7,30 @@ const tasks = document.querySelectorAll(".task");
 const columns = [todo, progress, done];
 let dragTask = null;
 
+if(localStorage.getItem("tasks")){
+    const data = JSON.parse(localStorage.getItem("tasks"));
 
+    for(const col in data){
+        const column = document.querySelector(`#${col}`);
+        data[col].forEach(task => {
+            const div = document.createElement("div");
+
+            div.classList.add("task")
+            div.setAttribute("draggable", "true")
+
+            div.innerHTML = `
+                <h2>${task.title}</h2>
+                <p>${task.desc}</p>
+                <button>Delete</button>
+            `
+            column.appendChild(div)
+
+            div.addEventListener("drag", (e) => {
+                dragTask = div;
+            })
+        })
+    }
+}
 
 tasks.forEach(task => {
     task.addEventListener("drag", (e) => {
